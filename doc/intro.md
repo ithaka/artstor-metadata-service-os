@@ -2,17 +2,16 @@
 
 Artstor metadata service provides short and complete metadata for content items published to AIW platform.
 
-Artstor Item Resolution Service API
-    Services for retrieving thumbnail data about an item.Gets all specified items the user has access too.
+Requirements:
+1. Solr or a search engine that provides metadata of Artstor Core fields and Key-value pairs.
 
-Artstor Item Metadata Service API
-    Services for retrieving  metadata about an item
-    Gets the metadata for all the specified items the user has access to.  (150 max).
+2. Oracle database as an alternative to Solr/search engine.
 
-InternalOnly Metadata
-    For internal use only:Works similar to Item metadata service except tht it does not check for authentication.
+3. An implementation wrapper for Authentication wrapper `with-auth` if required to authenticate access rights for content.
 
-Generate web-token:
-    Generates a web tokens that can be used to communicate across different services.
-
-
+Library Dependencies:-
+1. org.slf4j and ring logger libraries
+2. Ithaka platform libraries needed for calling Solr/Search service.
+3. Sql libraries yesql and ojdbc7
+4. ragtime for setting up test database.
+5. web api and swagger done using metosin/compojure.
