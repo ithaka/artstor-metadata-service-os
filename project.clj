@@ -1,8 +1,8 @@
 (defproject artstor-metadata-service-os "1.0.0"
   :description "Artstor Metadata Service"
   :url "http://www.artstor.org/"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :license {:name "MIT License"
+            :url "https://opensource.org/licenses/MIT"}
 
   :dependencies [[org.ithaka/clj-iacauth "1.2.2"]
                  [org.clojure/clojure "1.8.0"]
